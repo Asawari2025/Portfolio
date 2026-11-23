@@ -7,7 +7,7 @@ const projects = [
     title: "Youtube-clone Back-end-Focused_project",
     description:
       "YouTube clone using Node.js, Express.js, MongoDB, Mongoose, Cloudinary, Atlas, Cookies, authentication token, multer, controllers, middleware, following industry standards coding structure,",
-    image: "/public/projects/youtube-clone-project.jpg",
+    image: "/projects/youtube-clone-project.jpg",
     tags: [
       "MongoDB",
       "Mongoose",
@@ -25,7 +25,7 @@ const projects = [
     title: "Full-stack-basic-project",
     description:
       "Created server with express and from localhost requested data by providing proxy also used axios",
-    image: "/public/projects/Full_stack_project.png",
+    image: "/projects/Full_stack_project.png",
     tags: ["React.Js", "Node.Js", "TailwindCSS"],
     gitHubUrl: "https://github.com/Asawari2025/Full-stack-basic-project",
   },
@@ -34,7 +34,7 @@ const projects = [
     title: "Currency Converter",
     description:
       "Created React + Vite + tailwindcss project using react basic hooks along with a custom hook implementation",
-    image: "/public/projects/Currency_converter_view.png",
+    image: "/projects/Currency_converter_view.png",
     tags: ["React.Js", "TailwindCSS", "Javascript", "HTML5"],
     gitHubUrl: "https://github.com/Asawari2025/currencyConverter",
   },
@@ -43,7 +43,7 @@ const projects = [
     title: "ML Project",
     description:
       "Confusion matrix comparison of LOgistic regression, KNN and SVM using Anaconda , numpy, pandas , matplotlib.pyplot ,seaborn , sklearn.metrics , confusion_matrix",
-    image: "/public/projects/ML_Project_view.png",
+    image: "/projects/ML_Project_view.png",
     tags: ["Machine Learning", "Anaconda", "Regression-algorithm"],
     gitHubUrl: "https://github.com/Asawari2025/ML-Project",
   },
