@@ -47,6 +47,21 @@ const projects = [
     tags: ["Machine Learning", "Anaconda", "Regression-algorithm"],
     gitHubUrl: "https://github.com/Asawari2025/ML-Project",
   },
+  {
+    id: 5,
+    title: "Conservo - Highlight & Summarize Webpages",
+    description:
+      "A Chrome extension for highlighting and saving webpage text, revisiting and managing saved highlights, and generating concise AI summaries. Highlights are stored locally in extension storage for quick retrieval.",
+    image: "/projects/conservo-highlight-saver.png",
+    tags: [
+      "Selection API",
+      "Content scripts",
+      "Tailwind",
+      "OpenAI API",
+      "Extension storage",
+    ],
+    gitHubUrl: "https://github.com/Asawari2025/LLM-AI-Project",
+  },
 ];
 //https://github.com/Asawari2025/Mega-Project
 // //https://github.com/Asawari2025/ML-Project
@@ -64,23 +79,23 @@ export const ProjectSection = () => {
           Here are my recent projects, Each Project was carefully crafted with
           attention to detail, performance, and user experience
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lh=g:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover-"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-video overflow-hidden bg-secondary">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full object-cover transition-tranform duration-500 group-hover:scale-110"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground group-hover:text-primary">
+                    <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground group-hover:text-primary">
                       {tag}
                     </span>
                   ))}
@@ -95,6 +110,7 @@ export const ProjectSection = () => {
                       href={project?.demoUrl}
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <ExternalLink size={20} />
                     </a>
@@ -102,6 +118,7 @@ export const ProjectSection = () => {
                       href={project.gitHubUrl}
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaGithub size={20} />
                     </a>
